@@ -1,0 +1,34 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--body-font);
+    font-weight: 400;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    background-color: var(--bg-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    font-weight: var(--font-regular);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

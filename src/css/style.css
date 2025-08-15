@@ -1,0 +1,11 @@
+/* ===== Base ===== */
+@import url('./fonts.css');
+@import url('./variables.css');
+@import url('./body.css');
+@import url('./header.css');
+
+/* ===== Components ===== */
+@import url('./components/main-hero.css');
+@import url('./components/main-sellers.css');
+@import url('./components/ai-button.css');
+@import url('./components/ai-modal.css');

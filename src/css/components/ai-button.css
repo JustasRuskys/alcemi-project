@@ -1,0 +1,22 @@
+.ai-button-wrapper {
+  position: sticky;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.ai-button {
+  padding: .75rem 1rem;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 30px 1px #F2F4FC80;
+  background-color: var(--color-blue);
+  color: var(--bg-white);
+  font-weight: 500;
+  font-size: var(--normal-font-size);
+}
+
+.ai-button .ai-button-icon {
+  margin-left: 1rem;
+}

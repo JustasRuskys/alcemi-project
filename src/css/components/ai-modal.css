@@ -1,0 +1,120 @@
+.ai-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.ai-modal .ai-modal-wrapper {
+    border: 1px solid var(--ai-chat-color);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background:
+    radial-gradient(75% 55% at 0% 100%,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,.5) 35%,
+      rgba(255,255,255,0) 70%),
+    radial-gradient(75% 55% at 100% 100%,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,.5) 35%,
+      rgba(255,255,255,0) 70%),
+    radial-gradient(120% 120% at 70% 100%, var(--color-blue) 0%, #041152 60%, var(--color-dark-blue) 100%);
+}
+
+.ai-modal .ai-modal-wrapper .buttons-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-modal .ai-modal-wrapper .buttons-block .return-button,
+.ai-modal .ai-modal-wrapper .buttons-block .close-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.ai-modal .ai-modal-wrapper .content-block {
+    margin-bottom: 5rem;
+    width: 100%;
+    max-width: 480px;
+}
+
+.ai-modal .ai-modal-wrapper .content-block .title-block {
+    margin-bottom: 3rem;
+}
+.ai-modal .ai-modal-wrapper .content-block .title-block .ai-chat {
+    font-family: var(--body-font);
+    font-weight: var(--font-regular);
+    color: var(--ai-chat-color);
+    text-align: center;
+}
+
+.ai-modal .ai-modal-wrapper .content-block .buttons-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ai-modal .ai-modal-wrapper .textarea-block {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.ai-modal .ai-modal-wrapper .textarea-block textarea {
+    font-family: var(--body-font);
+    background-color: var(--color-grey);
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.ai-modal .ai-modal-wrapper .textarea-block textarea:focus {
+    outline: none;
+}
+
+.ai-modal .ai-modal-wrapper .textarea-block .voice-chat-input .voice-chat {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(360deg, #0A186A 0%, #142FD0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.ai-modal .ai-modal-wrapper .logo-block {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.ai-modal .ai-modal-wrapper .logo-block .image-area {
+    width: 64px;
+    height: 26px;
+}
+
+.ai-modal .ai-modal-wrapper .logo-block .image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

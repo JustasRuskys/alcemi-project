@@ -1,0 +1,131 @@
+:root {
+    /* ===== Font Colors ===== */
+    --bg-white : #FEFEFE;
+    --white-color: #FEFEFE;
+    --ai-chat-color: #FCFCFC;
+    --logo-color : #475154;
+    --text-color : #373737;
+    --text-black: #161616;
+    --shop-button-color : #D5DBFF;
+    --color-blue : #1632CD;
+    --color-dark-blue: #02092E;
+    --color-grey : #DEE3FF;
+
+    /* ===== Font and Font sizes ===== */
+    --body-font: 'Satoshi', 'Times New Roman', Times, serif;
+    --title-font: 'Anybody', 'Times New Roman', Times, sans-serif;
+    --karla-font: 'Karla', 'Times New Roman', Times, sans-serif;
+    --sedgwick-font: 'Sedgwick Ave', 'Times New Roman', Times, sans-serif;
+    --biggest-font-size: 4.3rem;
+    --h1-font-size : 2rem;
+    --normal-font-size : 1rem;
+    --shop-button-font-size: 1.25rem;
+
+    /* ===== Font weight ===== */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /* ===== Space between containers ===== */
+    --container-margin: 2.5rem 0;
+}
+
+/* ===== Responsive Font ===== */
+    @media (max-width: 1024px) {
+        :root {
+            --biggest-font-size: 3.8rem;
+            --h1-font-size: 1.8rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        :root {
+            --biggest-font-size: 2.1rem;
+            --h1-font-size: 1.5rem;
+        }
+    }
+
+/* ===== Reusable CSS ===== */
+
+    /* === Containers === */
+.container-xl {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container-l {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1408px;
+}
+
+.container-m {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1390px;
+}
+
+@media (max-width: 1440px) {
+    .container-xl,
+    .container-l,
+    .container-m {
+        width: 95%;
+    }
+}
+@media (max-width: 768px) {
+    .container-xl,
+    .container-l,
+    .container-m {
+        width: 90%;
+    }
+}
+
+    /* === Buttons === */
+.shop-button {
+    font-family: var(--karla-font);
+    font-weight: var(--font-bold);
+    font-size: var(--shop-button-font-size);
+    color: var(--text-black);
+    width: fit-content;
+    background-color: var(--shop-button-color);
+    padding: .875rem 7.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .shop-button {
+        width: 100%;
+        max-width: 328px;
+        padding: .875rem 1rem;
+    }
+}
+
+.button-primary {
+    font-family: var(--body-font);
+    color: #fff;
+    border-radius: 10px;
+    padding: .75rem;
+    background: rgba(255,255,255,.10);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.button-primary:hover {
+    font-weight: var(--font-medium);
+    border: 1px solid #D9D9D9;
+}
+
+    /* === Images === */
+.image-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

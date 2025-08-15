@@ -1,0 +1,39 @@
+/* ===== Get Karla and Anybody fonts from Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Sedgwick+Ave&display=swap');
+
+/* ===== Get Satoshi font ===== */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../src/assets/fonts/Satoshi-Light.woff'),
+         url('../../src/assets/fonts/Satoshi-Light.woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../src/assets/fonts/Satoshi-Regular.woff'),
+         url('../../src/assets/fonts/Satoshi-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../src/assets/fonts/Satoshi-Medium.woff'),
+         url('../../src/assets/fonts/Satoshi-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../src/assets/fonts/Satoshi-Bold.woff'),
+         url('../../src/assets/fonts/Satoshi-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
